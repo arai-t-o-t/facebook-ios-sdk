@@ -44,6 +44,7 @@ Pod::Spec.new do |s|
     'DEFINES_MODULE': 'YES'
   }
   s.user_target_xcconfig = {'GCC_PREPROCESSOR_DEFINITIONS': '$(inherited) FBSDKCOCOAPODS=1' }
+  s.module_name = 'FBSDKCoreKit'
   s.library = 'c++', 'stdc++'
 
   s.subspec 'Basics' do |ss|
