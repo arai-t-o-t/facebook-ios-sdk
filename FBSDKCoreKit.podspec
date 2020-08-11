@@ -45,6 +45,8 @@ Pod::Spec.new do |s|
   }
   s.user_target_xcconfig = {'GCC_PREPROCESSOR_DEFINITIONS': '$(inherited) FBSDKCOCOAPODS=1' }
   s.module_name = 'FBSDKCoreKit'
+  s.module_map = 'FBSDKCoreKit/FBSDKCoreKit/Basics/FBSDKCoreKit.modulemap',
+                 'FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit.modulemap'
   s.library = 'c++', 'stdc++'
 
   s.subspec 'Basics' do |ss|
@@ -55,7 +57,6 @@ Pod::Spec.new do |s|
                              'FBSDKCoreKit/FBSDKCoreKit/Basics/*.h'
     ss.private_header_files = 'FBSDKCoreKit/FBSDKCoreKit/Basics/Internal/**/*.h',
                               'FBSDKCoreKit/FBSDKCoreKit/Basics/Instrument/**/*.h'
-    ss.module_map = 'FBSDKCoreKit/FBSDKCoreKit/Basics/FBSDKCoreKit.modulemap'
     ss.library = 'z'
   end
 
@@ -75,7 +76,6 @@ Pod::Spec.new do |s|
     ss.private_header_files = 'FBSDKCoreKit/FBSDKCoreKit/Internal/**/*.h',
                               'FBSDKCoreKit/FBSDKCoreKit/AppEvents/Internal/**/*.h'
     ss.resources = 'FacebookSDKStrings.bundle'
-    ss.module_map = 'FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit.modulemap'
     ss.library = 'c++', 'stdc++'
   end
 end
