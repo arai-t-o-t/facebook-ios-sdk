@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
                              'FBSDKCoreKit/FBSDKCoreKit/Basics/*.h'
     ss.private_header_files = 'FBSDKCoreKit/FBSDKCoreKit/Basics/Internal/**/*.h',
                               'FBSDKCoreKit/FBSDKCoreKit/Basics/Instrument/**/*.h'
-    ss.module_map = 'FBSDKCoreKit/FBSDKCoreKit/Basics/FBSDKCoreKit.modulemap
+    ss.module_map = 'FBSDKCoreKit/FBSDKCoreKit/Basics/FBSDKCoreKit.modulemap'
     ss.library = 'z'
   end
 
